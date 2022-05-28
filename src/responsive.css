@@ -1,0 +1,246 @@
+:root {
+  --primary: #3352ec;
+  --secondary: #fe9e0f;
+  --feintbg: #919090a8;
+  --textLight: #050505;
+  --textDark: #424242;
+  --bgLight: #ffffff;
+  --secondaryLight: #fff5e1;
+  --primaryLight: #ced3ece0;
+}
+
+.burger div {
+  height: 3px;
+  width: 30px;
+  margin: 4px;
+  border-radius: 0px;
+  background-color: var(--primary);
+}
+.burger {
+  cursor: pointer;
+  display: none;
+}
+.categories-sm .filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px var(--textDark);
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+.categories-sm .filter-list {
+  display: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px var(--textDark);
+  padding: 10px;
+  position: absolute;
+  top: 111%;
+  width: 34%;
+  border-radius: 5px;
+  z-index: 10;
+}
+.categories-sm .filter-list-2 {
+  display: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px var(--textDark);
+  padding: 10px;
+  position: absolute;
+  top: 70%;
+  width: 34%;
+  border-radius: 5px;
+  z-index: 10;
+}
+.categories-sm .filter-list li,
+.filter-list-2 li {
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.1s;
+}
+.categories-sm .filter-list li:hover,
+.filter-list-2 li:hover {
+  color: var(--primary);
+  font-weight: bold;
+  transition: ease-out 0.1s;
+}
+.categories-sm .filter:hover ~ .filter-list {
+  display: block;
+}
+.categories-sm .filter:hover ~ .filter-list-2 {
+  display: block;
+}
+.filter-list:hover,
+.filter-list-2:hover {
+  display: block;
+}
+
+/* media queries */
+
+@media screen and (max-width: 770px) {
+  body {
+    overflow-x: hidden;
+  }
+  /* Header */
+  .logo h1 {
+    font-size: 20px;
+    z-index: 1000;
+  }
+  .nav-links {
+    position: absolute;
+    top: 50px;
+    background-color: var(--bgLight);
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    z-index: 10;
+  }
+  .burger {
+    display: block;
+    z-index: 100;
+  }
+  nav {
+    position: fixed;
+    padding: 20px 30px;
+    flex-direction: row-reverse;
+  }
+  .dropdown-content {
+    position: absolute;
+    left: 150px;
+  }
+  .dropdown-cart {
+    left: 150px;
+  }
+
+  /* Hero */
+
+  .hero-section {
+    height: 100vh;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .hero-img {
+    display: none;
+  }
+  .content h1 {
+    font-size: 32px;
+    width: 120%;
+    text-align: center;
+  }
+  .content h4 {
+    text-align: center;
+    font-size: 22px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* buttons */
+  .btn {
+    font-size: 12px;
+  }
+  .btn-sm {
+    font-size: 10px;
+  }
+
+  /* Category */
+  .categorySection,
+  .FullcategorySection {
+    padding: 40px 20px;
+  }
+
+  .categories {
+    display: none;
+  }
+  .categories-sm {
+    display: block;
+  }
+  .categorySection h1,
+  .FullcategorySection h1 {
+    font-size: 18px;
+  }
+
+  /* products */
+  .products {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+  }
+  .details {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 150px 10px;
+  }
+  .product-context {
+    width: 100%;
+  }
+  .product-context h1 {
+      font-size: 25px;
+  }
+  .product-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px;
+  }
+  .product-img img {
+    width: 220%;
+    height: 100%;
+  }
+  .product-context {
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* offers */
+  .OffersCategory {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+  }
+  .offer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      text-align: center;
+  }
+  .offer1 h1,
+  .offer2 h1 {
+    font-size: 22px;
+    width: 100%;
+  }
+  .offer img {
+      display: none;
+  }
+  .offer .descr {
+      font-size: 16px;
+      width: 100%;
+  }
+  .offer1 .title, .offer2 .title {
+      width: 100%;
+  }
+  .productCTA {
+      width: 73%;
+  }
+}
+
+.nav-active {
+    transform: translateX(0%);
+    transition: transform 0.3s ease-out;
+}

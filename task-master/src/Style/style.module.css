@@ -1,0 +1,142 @@
+.main {
+  background: #000;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main label {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  font-family: monospace;
+}
+.search {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px 20px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px
+}
+.input {
+  border: 1px solid #a3a3a3;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-right:10px ;
+  padding: 10px;
+  
+}
+
+.icon {
+  color: #a3a3a3;
+  font-size: 2.3rem;
+}
+.cartItem {
+  background-color: orangered;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute; 
+  top: 2%;
+  right: 7%;
+}
+select {
+  background: transparent;
+  color: #fff;
+  width: 20%;
+  border-radius: 8px;
+  outline: none;
+}
+select::-ms-expand {
+    display: none;
+}
+
+.mainObj{
+    width: 80%;
+    color: #fff;
+    margin: auto;
+}
+.mainContent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+.proMain{
+    width: 20%;
+    color: #fff;
+    margin: 30px
+}
+.proImg{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+}
+.product{
+  position: relative;
+}
+.image{
+  position: relative;
+}
+.buttonMain{
+  display: flex;
+}
+.button{
+  background: #fff;
+  outline: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: auto 0px;
+  position: absolute;
+  bottom: 5%;
+  right: 25%;
+  
+}
+.button1{
+  background: #fff;
+  outline: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: auto 0px;
+  position: absolute;
+  bottom: 5%;
+  right: 7%;
+  
+}
+.Buttonicon{
+  color: #858585;
+  font-size: 1rem;
+}
+.proTitle{
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  margin-top:20px  ;
+
+}
+.proPrice{
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: 700;
+    margin-top: 15px;
+}
