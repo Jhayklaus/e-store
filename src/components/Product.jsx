@@ -11,7 +11,7 @@ const Product = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`http://api.escuelajs.co/api/v1/products/${id}`).then((res) => {
+    axios.get(`https://api.escuelajs.co/api/v1/products/${id}`).then((res) => {
       setProduct(res.data);
       setLoading(false);
       console.log(product);
