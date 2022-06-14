@@ -14,7 +14,7 @@ const Categories = () => {
 
   useEffect(() => {
     axios
-      .get("http://api.escuelajs.co/api/v1/products?offset=0&limit=4")
+      .get("https://api.escuelajs.co/api/v1/products?offset=0&limit=4")
       .then((res) => {
         setProducts(res.data);
         setLoading(false);
