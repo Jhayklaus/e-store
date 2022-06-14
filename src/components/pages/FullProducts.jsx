@@ -15,7 +15,7 @@ const FullProducts = () => {
 
   useEffect(() => {
     axios
-      .get("http://api.escuelajs.co/api/v1/products")
+      .get("https://api.escuelajs.co/api/v1/products")
       .then((res) => {
         setProducts(res.data);
         setLoading(false);
