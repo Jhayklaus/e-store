@@ -38,30 +38,7 @@ const Categories = () => {
       <div className="categorySection">
         <h1 className="title">Best Selling</h1>
 
-        {/* <ul className="categories">
-          <li onClick={() => setFilter(products)}>All</li>
-          <li onClick={() => filterProducts("Shoes")}>Shoes</li>
-          <li onClick={() => filterProducts("Furniture")}>Furnitures</li>
-          <li onClick={() => filterProducts("Clothes")}>Clothes</li>
-          <li onClick={() => filterProducts("Electronics")}>Electronics</li>
-          <li onClick={() => filterProducts("Others")}>Others</li>
-        </ul>
-
-        <div className="categories-sm">
-          <div className="filter">
-            <h5>Filter by categories</h5>
-            <img src={dropdown} />
-          </div>
-          <div className="filter-list">
-            <li onClick={() => setFilter(products)}>All</li>
-            <li onClick={() => filterProducts("Shoes")}>Shoes</li>
-            <li onClick={() => filterProducts("Furniture")}>Furnitures</li>
-            <li onClick={() => filterProducts("Clothes")}>Clothes</li>
-            <li onClick={() => filterProducts("Electronics")}>Electronics</li>
-            <li onClick={() => filterProducts("Others")}>Others</li>
-          </div>
-        </div> */}
-        
+       
       </div>
 
       {loading ? (
