@@ -239,7 +239,8 @@
       width: 73%;
   }
   form input {
-    width: 400px;
+    width: 300px;
+    padding: 15px 8px;
   }
 }
 
