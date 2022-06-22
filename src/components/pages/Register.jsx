@@ -22,10 +22,9 @@ const Register = () => {
       )
       .then(function (response) {
         console.log(response);
-        toast(`account created successfully...`, {
+        toast(`account created successfully, Login with the link below`, {
           position: toast.POSITION.TOP_CENTER,
         });
-        <NavLink to={`/`}>LOGIN HERE</NavLink>
       })
       .catch(function (error) {
         toast.error("Something went wrong...", {
@@ -85,7 +84,7 @@ const Register = () => {
           <Buttons text="Continue" color="#3352ec" />
         </form>
         <NavLink className="forgot" to={`/`}>
-          <p>Already have an account? </p>
+          <p>Login here </p>
         </NavLink>
       </div>
     </div>
