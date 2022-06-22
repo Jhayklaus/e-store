@@ -3,15 +3,18 @@ import Home from './components/pages/Home'
 import FullProducts from './components/pages/FullProducts';
 import Product from './components/Product';
 import {Route, Routes} from 'react-router-dom'
+import Index from './components/pages/Index';
+import Register from './components/pages/Register';
  
 function App() {
 
   return (
 
         <>
-        <Header />
         <Routes>
-            <Route path='/' element={<Home/>} />
+            <Route path='/' element={<Index/>} />
+            <Route path='/newuser' element={<Register/>} />
+            <Route path='/home' element={<Home/>} />
             <Route path='/products' element={<FullProducts/>} />
             <Route path='/products/:id' element={<Product/>}/>
         </Routes>

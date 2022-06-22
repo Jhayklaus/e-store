@@ -5,6 +5,7 @@ import ButtonSmall from "../ButtonSmall";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import dropdown from "../../images/dropdown.png";
+import Header from "../Header";
 
 
 const FullProducts = () => {
@@ -41,6 +42,7 @@ const FullProducts = () => {
     
 
     <div id="FullproductsSection">
+      <Header/>
       <div className="FullcategorySection">
         <h1 className="title">A List of all our Products</h1>
 

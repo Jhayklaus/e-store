@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import axios from "axios";
 import ButtonSmall from "./ButtonSmall";
+import Header from './Header'
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
@@ -75,6 +76,7 @@ const Product = () => {
 
   return (
     <div>
+      <Header/>
       <div className="detailSection">
         <div className="details">{loading ? <Loading /> : <ShowProduct />}</div>
       </div>

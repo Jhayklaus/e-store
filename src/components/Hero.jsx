@@ -9,8 +9,8 @@ const Hero = () => {
       <div className="content">
         <h1>Don’t miss our daily amazing deals.</h1>
         <h4>Save up to 50% on your first order</h4>
-        <NavLink className='link' to='/products'>
-        <Buttons id='content' color="#3352ec"  text="Get Started" />
+        <NavLink className='link' to='/'>
+        <Buttons id='content' color="#3352ec"  text="Get Voucher" />
         </NavLink>
       </div>
       <div className="hero-img">
