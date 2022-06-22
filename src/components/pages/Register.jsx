@@ -10,24 +10,28 @@ const Register = () => {
   const [data, setData] = useState({
     name: "",
     email: "",
-    password: ""
+    password: "",
+    avatar: ""
   });
 
   function submit(e) {
     e.preventDefault();
     axios
-      .post("https://api.escuelajs.co/api/v1/users/", data)
+      .post(`https://api.escuelajs.co/api/v1/users/`, data
+  
+      )
       .then(function (response) {
         console.log(response);
-        toast("account created successfully...", {
+        toast(`account created successfully...`, {
           position: toast.POSITION.TOP_CENTER,
         });
+        <NavLink to={`/`}>LOGIN HERE</NavLink>
       })
       .catch(function (error) {
-        console.log(error);
         toast.error("Something went wrong...", {
           position: toast.POSITION.TOP_CENTER,
         });
+        console.log(error);
       });
   }
 
@@ -70,6 +74,13 @@ const Register = () => {
             value={data.password}
             type="password"
             placeholder="password"
+          />
+          <input
+            onChange={(e) => handle(e)}
+            id="avatar"
+            value={data.avatar}
+            type="url"
+            placeholder="paste url to avatar"
           />
           <Buttons text="Continue" color="#3352ec" />
         </form>
