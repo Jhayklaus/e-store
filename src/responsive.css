@@ -238,6 +238,9 @@
   .productCTA {
       width: 73%;
   }
+  form input {
+    width: 400px;
+  }
 }
 
 .nav-active {
