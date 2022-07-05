@@ -28,6 +28,12 @@ const Header = () => {
             </div>
           </NavLink>
 
+          <NavLink className="link" to="/dashboard">
+            <div className="wishlist">
+              <p>Statistics</p>
+            </div>
+          </NavLink>
+
           <NavLink className="link" to="/cart">
             <div className="cart">
               <img src={cart} />
@@ -46,7 +52,7 @@ const Header = () => {
             </div>
           </NavLink>
 
-          <NavLink className="link" to="/user">
+          <div className="link">
             <div className="user">
               <img src={profile} />
               <p>John Doe</p>
@@ -54,15 +60,15 @@ const Header = () => {
             </div>
             <div class="dropdown-content">
               <div className="settings">
-                <a href="#">Settings</a>
+                <a href="#">Edit profile</a>
                 <img src={settings} />
               </div>
               <div className="logout">
-                <a href="#">Logout</a>
+                <NavLink to="/">Logout</NavLink>
                 <img src={logout} />
               </div>
             </div>
-          </NavLink>
+          </div>
         </ul>
 
         <div className="burger">

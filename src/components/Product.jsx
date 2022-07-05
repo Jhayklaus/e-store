@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import axios from "axios";
 import ButtonSmall from "./ButtonSmall";
-import Header from './Header'
+import Header from "./Header";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
@@ -12,7 +12,8 @@ const Product = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`https://api.escuelajs.co/api/v1/products/${id}`).then((res) => {
+    axios.get(`https://api.escuelajs.co/api/v1/products/${id}`)
+    .then((res) => {
       setProduct(res.data);
       setLoading(false);
       console.log(product);
@@ -48,7 +49,7 @@ const Product = () => {
       <>
         <div className="backBtn">
           <NavLink className="link" to="/">
-          <ButtonSmall text="<<< Back" color="#2845d33b" />
+            <ButtonSmall text="<<< Back" color="#2845d33b" />
           </NavLink>
         </div>
         <div className="product-img">
@@ -62,7 +63,9 @@ const Product = () => {
         <div className="product-context">
           <h4>Category: {product.category.name}</h4>
           <h1>{product.title}</h1>
-          <h2>${product.price}.<span style={{ color: "darkgray" }}>00</span></h2>
+          <h2>
+            ${product.price}.<span style={{ color: "darkgray" }}>00</span>
+          </h2>
           <p>{product.description}</p>
 
           <div className="productCTA">
@@ -76,7 +79,7 @@ const Product = () => {
 
   return (
     <div>
-      <Header/>
+      <Header />
       <div className="detailSection">
         <div className="details">{loading ? <Loading /> : <ShowProduct />}</div>
       </div>

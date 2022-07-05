@@ -36,7 +36,7 @@ const Categories = () => {
   return (
     <div id="productsSection">
       <div className="categorySection">
-        <h1 className="title">Best Selling</h1>
+        <h1 className="title">This Week Best Sellers</h1>
 
        
       </div>
@@ -70,7 +70,7 @@ const Categories = () => {
 
             <div className="seeAll">
             <NavLink className="link" to="/products">
-            <ButtonSmall color="#2845d33b" text="See all products.." />
+            <ButtonSmall color="#2845d33b" text="Start Shopping Now!" />
             </NavLink>
             </div>
 

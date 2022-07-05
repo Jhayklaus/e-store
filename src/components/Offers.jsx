@@ -27,7 +27,7 @@ const Offers = () => {
                     <h1>Welcome Bonus!</h1>
                     <p className='descr'>Save up to 60% off on your first order</p>
                     <NavLink className='link' to='/products'>
-                    <Buttons text="Shop Now" color="#3352ec"/>
+                    <Buttons text="Claim Now " color="#3352ec"/>
                     </NavLink>
                 </div>
                 <img src={goods} />
