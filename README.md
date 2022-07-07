@@ -1,2 +1,2 @@
-# e-store
+# shopxpress
  Ecommerce website
