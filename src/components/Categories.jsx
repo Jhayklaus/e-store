@@ -36,17 +36,17 @@ const Categories = () => {
   return (
     <div id="productsSection">
       <div className="categorySection">
-        <h1 className="title">This Week Best Sellers</h1>
+        <h1 className="title">Featured Products</h1>
 
        
       </div>
 
       {loading ? (
         <div className="products">
-          <Skeleton className="space" height={340} width={300} />
-          <Skeleton className="space" height={340} width={300} />
-          <Skeleton className="space" height={340} width={300} />
-          <Skeleton className="space" height={340} width={300} />
+          <Skeleton className="space" height={300} width={250} />
+          <Skeleton className="space" height={300} width={250} />
+          <Skeleton className="space" height={300} width={250} />
+          <Skeleton className="space" height={300} width={250} />
         </div>
       ) : (
         <div className="products">
@@ -68,11 +68,11 @@ const Categories = () => {
         </div>
       )}
 
-            <div className="seeAll">
+            {/* <div className="seeAll">
             <NavLink className="link" to="/products">
             <ButtonSmall color="#2845d33b" text="Start Shopping Now!" />
             </NavLink>
-            </div>
+            </div> */}
 
     </div>
 

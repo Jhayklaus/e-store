@@ -1,11 +1,11 @@
-import Header from './components/Header'
 import Home from './components/pages/Home'
 import FullProducts from './components/pages/FullProducts';
 import Product from './components/Product';
 import {Route, Routes } from 'react-router-dom'
-import Index from './components/pages/Index';
-import Register from './components/pages/Register';
- 
+import Stats from './components/pages/Stats';
+import Track from './components/pages/Track';
+import History from './components/pages/History';
+
 function App() {
 
   return (
@@ -17,6 +17,9 @@ function App() {
             <Route path='/' element={<Home/>} />
             <Route path='/products' element={<FullProducts/>} />
             <Route path='/products/:id' element={<Product/>}/>
+            <Route path='/stats' element={<Stats/>}/>
+            <Route path='/track' element={<Track/>}/>
+            <Route path='/history' element={<History/>}/>
         </Routes>
         </>
 

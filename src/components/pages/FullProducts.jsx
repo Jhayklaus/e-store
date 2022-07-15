@@ -55,6 +55,9 @@ const FullProducts = () => {
           <li onClick={()=>filterProducts("Others")}>Others</li>
         </ul>
 
+
+        
+        {/* categories-sm only get displayed on mobile view, Hidden by default */}
         <div className="categories-sm">
           <div className="filter">
             <h5>Filter by categories</h5>
@@ -75,15 +78,15 @@ const FullProducts = () => {
       {loading ? (
         <div className="Fullproducts">
           
-          <Skeleton className="space" height={340} width={300} />
-          <Skeleton className="space" height={340} width={300} />
-          <Skeleton className="space" height={340} width={300} />
-          <Skeleton className="space" height={340} width={300} />
+          <Skeleton className="space" height={300} width={250} />
+          <Skeleton className="space" height={300} width={250} />
+          <Skeleton className="space" height={300} width={250} />
+          <Skeleton className="space" height={300} width={250} />
           
-          <Skeleton className="space" height={340} width={300} />
-          <Skeleton className="space" height={340} width={300} />
-          <Skeleton className="space" height={340} width={300} />
-          <Skeleton className="space" height={340} width={300} />
+          <Skeleton className="space" height={300} width={250} />
+          <Skeleton className="space" height={300} width={250} />
+          <Skeleton className="space" height={300} width={250} />
+          <Skeleton className="space" height={300} width={250} />
 
         </div>
       ) : (
