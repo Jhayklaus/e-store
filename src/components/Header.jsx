@@ -14,7 +14,7 @@ const Header = () => {
       <nav>
         <div className="logo">
           <h1>
-            Shop<span>Xpress.</span>
+            Shop<span>xpress.</span>
           </h1>
         </div>
         <ul className="nav-links">
