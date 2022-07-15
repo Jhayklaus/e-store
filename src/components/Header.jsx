@@ -6,6 +6,7 @@ import logout from "../images/logout.png";
 import settings from "../images/settings.png";
 import checkout from "../images/cart-check.png";
 import { NavLink } from "react-router-dom";
+import { FiShoppingCart } from "react-icons/fi";
 
 const Header = () => {
   return (
@@ -28,15 +29,21 @@ const Header = () => {
             </div>
           </NavLink>
 
-          <NavLink className="link" to="/dashboard">
+          <NavLink className="link" to="/stats">
             <div className="wishlist">
               <p>Statistics</p>
             </div>
           </NavLink>
 
+          <NavLink className="link" to="/track">
+            <div className="wishlist">
+              <p>Track Order</p>
+            </div>
+          </NavLink>
+
           <NavLink className="link" to="/cart">
             <div className="cart">
-              <img src={cart} />
+              <FiShoppingCart />
               <p>Cart</p>
               <img src={dropdown} />
             </div>

@@ -4,9 +4,8 @@ import React from 'react'
 const Buttons = ( { color, text, textColor } ) => {
   return <button style={{ backgroundColor: color, color: textColor  }} className='btn'>{text}</button>
 
-
-
 }
+
 
 
 

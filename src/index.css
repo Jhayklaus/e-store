@@ -18,8 +18,10 @@
   --bgLight: #ffffff;
   --secondaryLight: #fff5e1;
   --primaryLight: #ced3ece0;
-  --danger: rgb(156, 1, 1);
-  --success: rgb(5, 190, 5);
+  --danger: rgb(194, 0, 0);
+  --dangerLight: rgb(230, 187, 187);
+  --success: rgb(4, 211, 4);
+  --successLight: rgb(220, 247, 220);
 }
 .link {
   text-decoration: none;
@@ -61,7 +63,7 @@ nav {
 .nav-links {
   display: flex;
   align-items: center;
-  width: 49%;
+  width: 55%;
   justify-content: space-around;
 }
 .wishlist,
@@ -184,6 +186,9 @@ nav {
   font-weight: bolder;
   color: var(--bgLight);
   cursor: pointer;
+}
+.btnIco {
+  display: flex;
 }
 
 .content .btn:hover {
@@ -486,3 +491,151 @@ form input:focus {
 .mb3 {
   margin-bottom: 30px;
 }
+
+
+/* Featured catg styles */
+
+.featured_categories_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 49vh;
+  width: 100%;
+}
+.featured_categories_wrapper .item {
+  margin: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: 10%;
+  padding: 50px;
+  color: var(--bgLight);
+  border-radius: 3px;
+}
+.shoes {
+  background-color: rgb(148, 243, 59);
+}
+.clothings {
+  background-color: rgb(250, 133, 133);
+  border: dashed 3px rgb(209, 23, 23);
+}
+.electronics {
+  background-color: lightblue;
+}
+.furnitures {
+  background-color: rgb(252, 207, 141);
+}
+.others {
+  background-color: rgb(154, 54, 248);
+}
+.featured_categories_wrapper img {
+  width: 120%;
+  /* margin: 20px 60px; */
+}
+.spacer-20 {
+  margin-top: 80px;
+}
+
+
+/* Stats page styles */
+
+.stats_wrapper {
+  width: 35%;
+}
+.main_wrapper {
+  padding: 100px 50px 0px 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.board_wrapper {
+  display: flex;
+  margin: 10px;
+}
+.order {
+  padding: 60px 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 5px;
+  width: 52%;
+  font-size: 12px;
+}
+.total {
+  background-color: var(--primaryLight);
+  color: var(--primary);
+}
+.pending {
+  background-color: var(--dangerLight);
+  color: var(--danger);
+}
+.spent {
+  background-color: var(--successLight);
+  color: var(--success);
+}
+.voucherUsed {
+  background-color: var(--secondaryLight);
+  color: var(--secondary);
+}
+.cashback {
+  background-color: var(--primary);
+  color: var(--secondaryLight);
+}
+.cancelled {
+  background-color: var(--danger);
+  color: var(--secondaryLight);
+}
+
+.order_history {
+  width: 50%;
+  height: 400px;
+  background-color: var(--bgLight);
+}
+
+.history_titles {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary);
+  border-radius: 10px 10px 0 0;
+  padding: 10px 0;
+}
+.history_item {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.history_item p {
+  margin: 20px 30px;
+  font-size: 12px;
+  color: var(--textDark);
+}
+.history_titles p {
+  margin: 0px 30px;
+  font-size: 12px;
+  color: var(--bgLight);
+}
+.history {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.no-underline {
+  text-decoration: none;
+}
+
+
+
+.statusDanger {
+  color: var(--danger) !important;
+}
+.statusSuccess {
+  color: var(--success) !important;
+}
+.statusPending {
+  color: var(--secondary) !important;
+}
+
+
+
