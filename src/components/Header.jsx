@@ -6,7 +6,7 @@ import logout from "../images/logout.png";
 import settings from "../images/settings.png";
 import checkout from "../images/cart-check.png";
 import { NavLink } from "react-router-dom";
-import { FiShoppingCart } from "react-icons/fi";
+// import { FiShoppingCart } from "react-icons/fi";
 
 const Header = () => {
   return (
@@ -43,7 +43,7 @@ const Header = () => {
 
           <NavLink className="link" to="/cart">
             <div className="cart">
-              <FiShoppingCart />
+              {/* <FiShoppingCart /> */}
               <p>Cart</p>
               <img src={dropdown} />
             </div>
