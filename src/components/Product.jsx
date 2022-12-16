@@ -23,7 +23,7 @@ const Product = () => {
     return (
       <>
         <div className="product-img">
-          <Skeleton width={600} height={400} />
+          <Skeleton width={350} height={350} />
         </div>
         <div className="product-context">
           <Skeleton width={300} height={50} />
@@ -47,7 +47,7 @@ const Product = () => {
     return (
       <>
         <div className="backBtn">
-          <NavLink className="link" to="/">
+          <NavLink className="link" to={-1}>
             <ButtonSmall text="<<< Back" color="#2845d33b" />
           </NavLink>
         </div>
@@ -55,8 +55,8 @@ const Product = () => {
           <img
             src={product.images}
             alt={product.title}
-            height="400px"
-            width="600px"
+            height="300px"
+            width="350px"
           />
         </div>
         <div className="product-context">

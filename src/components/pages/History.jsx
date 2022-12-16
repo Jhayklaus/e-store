@@ -5,8 +5,8 @@ const History = () => {
   return (
     <>
         <Header/>
-        <div className="history_wrapper">
-            
+        <div className="history_wrapper mb-20">
+            Coming soon...
         </div>
     </>
   )
